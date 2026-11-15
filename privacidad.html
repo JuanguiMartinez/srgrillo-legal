@@ -2,50 +2,76 @@
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad · Sr Grillo</title><link rel="stylesheet" href="estilo.css"><link rel="icon" href="icono.png"></head>
 <body><main>
-<header><img src="icono.png" alt=""><div><h1>Política de privacidad</h1><div class="meta">Sr Grillo · Vigente desde el 22 de octubre de 2026</div></div></header>
+<header><img src="icono.png" alt=""><div><h1>Política de privacidad</h1><div class="meta">Sr Grillo · Vigente desde el 15 de noviembre de 2026</div></div></header>
 
 <h2>1. A quién aplica</h2>
-<p>Sr Grillo Studio es una herramienta personal que solo usa su creador para publicar en sus propias cuentas. No recoge datos de seguidores, espectadores ni de ninguna otra persona.</p>
+<p>Sr Grillo App (“la aplicación”) es una herramienta personal que solo usa el creador de Sr Grillo para publicar videos en sus propias cuentas de YouTube, Facebook, Instagram y TikTok, ver las métricas de esas publicaciones y responder los comentarios que reciben. No está abierta al público ni tiene registro de usuarios.</p>
 
 <h2>2. Qué datos usa</h2>
 <ul>
-<li><strong>Permisos de acceso</strong> (tokens) que entregan TikTok, Facebook e Instagram cuando el creador autoriza su propia cuenta.</li>
-<li><strong>Datos básicos de la cuenta</strong> del creador: identificador y nombre visible, solo para mostrar qué cuenta está conectada.</li>
-<li><strong>Los videos y textos</strong> que el creador produce y decide publicar.</li>
+<li><strong>Del creador</strong>: los permisos de acceso (tokens) que entrega cada plataforma cuando el creador autoriza su propia cuenta, y los datos básicos de esa cuenta (identificador, nombre visible y número de seguidores).</li>
+<li><strong>De las publicaciones del creador</strong>: estadísticas agregadas como vistas, me gusta, compartidos y seguidores. Son cifras totales; no identifican a ninguna persona.</li>
+<li><strong>De quienes comentan</strong>: el nombre de usuario público y el texto de los comentarios dejados en los videos de Sr Grillo en YouTube, Facebook e Instagram, para que el creador pueda leerlos y responderlos.</li>
 </ul>
-<p>En TikTok la aplicación solo pide los permisos <code>user.info.basic</code> (nombre visible) y <code>video.upload</code> (enviar el video como borrador a la bandeja de la cuenta). No lee mensajes, seguidores, comentarios ni estadísticas.</p>
+<p>La aplicación no lee mensajes privados, listas de amigos o seguidores, correos, teléfonos ni ningún otro dato personal, y no publica nada en cuentas ajenas.</p>
 
-<h2>3. Dónde se guardan</h2>
-<p>Todo se guarda únicamente en el computador del creador. Los permisos de acceso están en un archivo local que no se sube a internet ni se comparte. No hay servidores propios ni bases de datos en la nube.</p>
+<h2>3. Permisos que pide</h2>
+<ul>
+<li><strong>Facebook e Instagram</strong>: <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>, <code>pages_read_user_content</code>, <code>pages_manage_engagement</code>, <code>read_insights</code>, <code>business_management</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>instagram_manage_comments</code> e <code>instagram_manage_insights</code>. Sirven para publicar en la Página y la cuenta de Instagram de Sr Grillo, leer sus métricas y leer y responder sus comentarios.</li>
+<li><strong>TikTok</strong>: <code>user.info.basic</code>, <code>user.info.profile</code>, <code>user.info.stats</code>, <code>video.list</code> y <code>video.upload</code>. Sirven para enviar el video a la bandeja de la cuenta y leer las estadísticas de sus videos.</li>
+<li><strong>YouTube</strong>: <code>youtube.upload</code>, <code>youtube.readonly</code> y <code>youtube.force-ssl</code>. Sirven para subir los videos al canal, leer sus estadísticas y leer y responder sus comentarios.</li>
+</ul>
 
-<h2>4. Con quién se comparten</h2>
-<p>Con nadie. Los videos y textos solo se envían a la plataforma en la que el creador decide publicarlos. No se venden datos ni se usan para publicidad.</p>
+<h2>4. Dónde se guardan</h2>
+<ul>
+<li><strong>Permisos de acceso</strong>: como variables privadas del entorno de trabajo en la nube donde corre la aplicación (Claude Code, de Anthropic). No se escriben en el código ni se comparten.</li>
+<li><strong>Métricas y comentarios</strong>: en un panel privado de uso exclusivo del creador, alojado en claude.ai (Anthropic).</li>
+<li><strong>Videos, voces e imágenes</strong> del canal: en un almacenamiento privado en la nube (Backblaze B2). No contienen datos de terceros.</li>
+</ul>
 
-<h2>5. Cuánto tiempo y cómo borrarlos</h2>
-<p>Los permisos se conservan mientras la cuenta esté conectada. Al pulsar “Desconectar” en la aplicación se borran del computador, y el acceso también puede revocarse desde cada plataforma (en TikTok: Configuración y privacidad → Seguridad → Apps y servicios).</p>
+<h2>5. Con quién se comparten</h2>
+<p>Con nadie más que los proveedores que hacen funcionar la aplicación (Anthropic y Backblaze), que solo guardan o procesan los datos por cuenta del creador. Los videos y textos se envían únicamente a la plataforma en la que el creador decide publicarlos. No se venden datos ni se usan para publicidad.</p>
 
-<h2>6. Contacto</h2>
-<p>Para cualquier pregunta sobre esta política, escribe un mensaje directo a <a href="https://www.instagram.com/senorgrillo/">@senorgrillo en Instagram</a>.</p>
+<h2>6. Cuánto tiempo se conservan</h2>
+<p>Los permisos de acceso, mientras la cuenta esté conectada. Las métricas y los comentarios, mientras sean útiles para el canal y como máximo 2 años. Si un comentario se borra en la plataforma, deja de traerse en las siguientes sincronizaciones.</p>
+
+<h2>7. Tus derechos y cómo borrar tus datos</h2>
+<p>Puedes pedir en cualquier momento que se borre lo que haya sobre ti. Las instrucciones están en <a href="eliminar-datos.html">Eliminación de datos</a>. El creador puede además revocar el acceso de la aplicación desde la configuración de cada plataforma.</p>
+
+<h2>8. Contacto</h2>
+<p>Para cualquier pregunta sobre esta política, escribe un mensaje directo a <a href="https://www.instagram.com/soy.srgrillo/">@soy.srgrillo en Instagram</a>.</p>
 
 <hr>
 <h1>Privacy Policy</h1>
-<p class="meta">Sr Grillo · Effective October 22, 2026</p>
+<p class="meta">Sr Grillo · Effective November 15, 2026</p>
 <h2>1. Scope</h2>
-<p>Sr Grillo Studio is a personal tool used only by its creator to publish to the creator's own accounts. It does not collect data about followers, viewers or anyone else.</p>
+<p>Sr Grillo App (“the app”) is a personal tool used only by the creator of Sr Grillo to publish videos to the creator's own YouTube, Facebook, Instagram and TikTok accounts, view the metrics of those posts and reply to the comments they receive. It is not open to the public and has no user sign-up.</p>
 <h2>2. Data used</h2>
 <ul>
-<li><strong>Access tokens</strong> issued by TikTok, Facebook and Instagram when the creator authorizes their own account.</li>
-<li><strong>Basic account data</strong> of the creator: identifier and display name, only to show which account is connected.</li>
-<li><strong>Videos and captions</strong> the creator produces and chooses to publish.</li>
+<li><strong>About the creator</strong>: the access tokens each platform issues when the creator authorizes their own account, and that account's basic data (identifier, display name and follower count).</li>
+<li><strong>About the creator's posts</strong>: aggregate statistics such as views, likes, shares and followers. These are totals and do not identify anyone.</li>
+<li><strong>About commenters</strong>: the public username and the text of comments left on Sr Grillo videos on YouTube, Facebook and Instagram, so the creator can read and answer them.</li>
 </ul>
-<p>On TikTok the app only requests <code>user.info.basic</code> (display name) and <code>video.upload</code> (send the video as a draft to the account's inbox). It does not read messages, followers, comments or analytics.</p>
-<h2>3. Storage</h2>
-<p>Everything is stored only on the creator's computer. Access tokens live in a local file that is never uploaded or shared. There are no servers or cloud databases.</p>
-<h2>4. Sharing</h2>
-<p>None. Videos and captions are only sent to the platform where the creator chooses to publish them. No data is sold or used for advertising.</p>
-<h2>5. Retention and deletion</h2>
-<p>Tokens are kept while the account is connected. “Disconnect” in the app deletes them from the computer, and access can also be revoked from each platform (on TikTok: Settings and privacy → Security → Apps and services).</p>
-<h2>6. Contact</h2>
-<p>For questions about this policy, send a direct message to <a href="https://www.instagram.com/senorgrillo/">@senorgrillo on Instagram</a>.</p>
-<nav><a href="index.html">Inicio / Home</a><a href="terminos.html">Términos de servicio / Terms of Service</a></nav>
+<p>The app does not read private messages, friend or follower lists, emails, phone numbers or any other personal data, and it does not post to anyone else's account.</p>
+<h2>3. Permissions requested</h2>
+<ul>
+<li><strong>Facebook and Instagram</strong>: <code>pages_show_list</code>, <code>pages_read_engagement</code>, <code>pages_manage_posts</code>, <code>pages_read_user_content</code>, <code>pages_manage_engagement</code>, <code>read_insights</code>, <code>business_management</code>, <code>instagram_basic</code>, <code>instagram_content_publish</code>, <code>instagram_manage_comments</code> and <code>instagram_manage_insights</code>, to publish to the Sr Grillo Page and Instagram account, read their metrics, and read and reply to their comments.</li>
+<li><strong>TikTok</strong>: <code>user.info.basic</code>, <code>user.info.profile</code>, <code>user.info.stats</code>, <code>video.list</code> and <code>video.upload</code>, to send videos to the account's inbox and read video statistics.</li>
+<li><strong>YouTube</strong>: <code>youtube.upload</code>, <code>youtube.readonly</code> and <code>youtube.force-ssl</code>, to upload videos to the channel, read their statistics, and read and reply to their comments.</li>
+</ul>
+<h2>4. Storage</h2>
+<ul>
+<li><strong>Access tokens</strong>: as private environment variables of the cloud workspace where the app runs (Claude Code, by Anthropic). They are never written into code or shared.</li>
+<li><strong>Metrics and comments</strong>: in a private dashboard used only by the creator, hosted on claude.ai (Anthropic).</li>
+<li><strong>Channel videos, voices and images</strong>: in private cloud storage (Backblaze B2). They contain no third-party data.</li>
+</ul>
+<h2>5. Sharing</h2>
+<p>Only with the providers that run the app (Anthropic and Backblaze), which store or process data solely on the creator's behalf. Videos and captions are sent only to the platform where the creator chooses to publish them. No data is sold or used for advertising.</p>
+<h2>6. Retention</h2>
+<p>Access tokens are kept while the account is connected. Metrics and comments are kept while useful to the channel, for at most 2 years. A comment deleted on the platform is no longer fetched in later syncs.</p>
+<h2>7. Your rights and data deletion</h2>
+<p>You can ask at any time for any data about you to be deleted. Instructions are on the <a href="eliminar-datos.html">Data Deletion</a> page. The creator can also revoke the app's access from each platform's settings.</p>
+<h2>8. Contact</h2>
+<p>For questions about this policy, send a direct message to <a href="https://www.instagram.com/soy.srgrillo/">@soy.srgrillo on Instagram</a>.</p>
+<nav><a href="index.html">Inicio / Home</a><a href="terminos.html">Términos de servicio / Terms of Service</a><a href="eliminar-datos.html">Eliminación de datos / Data Deletion</a></nav>
 </main></body></html>
